@@ -5,5 +5,17 @@
 	<classpathentry kind="lib" path="/Users/adamfowler/Documents/marklogic/software/client-api-java-1.0-1/client-api-java-1.0-1-javadoc.jar"/>
 	<classpathentry kind="lib" path="/Users/adamfowler/Documents/marklogic/software/client-api-java-1.0-1/client-api-java-1.0-1-sources.jar"/>
 	<classpathentry kind="lib" path="/Users/adamfowler/Documents/marklogic/software/client-api-java-1.0-1/client-api-java-1.0-1.jar"/>
+	<classpathentry kind="lib" path="/Users/adamfowler/Documents/marklogic/software/client-api-java-1.0-1/lib/commons-codec-1.6.jar"/>
+	<classpathentry kind="lib" path="/Users/adamfowler/Documents/marklogic/software/client-api-java-1.0-1/lib/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="/Users/adamfowler/Documents/marklogic/software/client-api-java-1.0-1/lib/httpclient-4.1.1.jar"/>
+	<classpathentry kind="lib" path="/Users/adamfowler/Documents/marklogic/software/client-api-java-1.0-1/lib/httpcore-4.1.jar"/>
+	<classpathentry kind="lib" path="/Users/adamfowler/Documents/marklogic/software/client-api-java-1.0-1/lib/jersey-apache-client4-1.13.jar"/>
+	<classpathentry kind="lib" path="/Users/adamfowler/Documents/marklogic/software/client-api-java-1.0-1/lib/jersey-client-1.13.jar"/>
+	<classpathentry kind="lib" path="/Users/adamfowler/Documents/marklogic/software/client-api-java-1.0-1/lib/jersey-core-1.13.jar"/>
+	<classpathentry kind="lib" path="/Users/adamfowler/Documents/marklogic/software/client-api-java-1.0-1/lib/jersey-multipart-1.13.jar"/>
+	<classpathentry kind="lib" path="/Users/adamfowler/Documents/marklogic/software/client-api-java-1.0-1/lib/logback-classic-1.0.6.jar"/>
+	<classpathentry kind="lib" path="/Users/adamfowler/Documents/marklogic/software/client-api-java-1.0-1/lib/logback-core-1.0.6.jar"/>
+	<classpathentry kind="lib" path="/Users/adamfowler/Documents/marklogic/software/client-api-java-1.0-1/lib/mimepull-1.6.jar"/>
+	<classpathentry kind="lib" path="/Users/adamfowler/Documents/marklogic/software/client-api-java-1.0-1/lib/slf4j-api-1.6.5.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

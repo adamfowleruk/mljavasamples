@@ -6,12 +6,10 @@ import javax.xml.xpath.XPath;
 import javax.xml.xpath.XPathConstants;
 import javax.xml.xpath.XPathFactory;
 
-import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.xml.sax.InputSource;
 
 import com.marklogic.client.document.XMLDocumentManager;
-import com.marklogic.client.io.DOMHandle;
 import com.marklogic.client.io.InputStreamHandle;
 
 public class GetDocumentElements extends BaseExample {
@@ -37,8 +35,10 @@ public class GetDocumentElements extends BaseExample {
     XPathFactory factory = XPathFactory.newInstance();
     XPath xPath = factory.newXPath();
     try {
-      Element kingdom = (Element)(xPath.evaluate("/animal/kingdom", inputSource,  XPathConstants.NODE));
-      System.out.println("Animal's kingdom is: " + kingdom.getNodeValue());
+      Element kingdom = (Element)(xPath.evaluate("/animal/animal-kingdom", inputSource,  XPathConstants.NODE));
+      if (null != kingdom) {
+        System.out.println("Animal's kingdom is: " + kingdom.toString());
+      }
     } catch (Exception e) {
       e.printStackTrace(System.out);
     }

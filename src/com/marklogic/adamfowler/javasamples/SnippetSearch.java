@@ -4,11 +4,9 @@ import com.marklogic.client.io.SearchHandle;
 import com.marklogic.client.query.MatchDocumentSummary;
 import com.marklogic.client.query.MatchLocation;
 import com.marklogic.client.query.QueryManager;
-import com.marklogic.client.query.StructuredQueryBuilder;
-import com.marklogic.client.query.StructuredQueryBuilder.Operator;
-import com.marklogic.client.query.StructuredQueryDefinition;
+import com.marklogic.client.query.StringQueryDefinition;
 
-public class CustomSearchOptions extends BaseExample {
+public class SnippetSearch extends BaseExample {
 
   /**
    * @param args
@@ -25,11 +23,10 @@ public class CustomSearchOptions extends BaseExample {
     //QueryOptionsManager qoManager = client.newServerConfigManager().newQueryOptionsManager();
     //QueryOptionsHandle handle = qoManager.readOptions("adamsoptions", new QueryOptionsHandle()); // how to load if you wanted to see the options
     
-    StructuredQueryBuilder qb = new StructuredQueryBuilder("adamsoptions");
+    StringQueryDefinition querydef = queryMgr.newStringDefinition("adamsoptions"); // reference the config options by name
     
     // set the search argument
-    StructuredQueryDefinition querydef = qb.rangeConstraint("kingdom", Operator.EQ,"bird"); // uses custom search option constraint 'kingdom' - see CreateCustomSearchOptions for details
-    
+    querydef.setCriteria("penguin"); // uses custom search option constraint 'kingdom' - see CreateCustomSearchOptions for details
 
     // create a handle for the search results
     SearchHandle resultsHandle = new SearchHandle();
@@ -37,7 +34,7 @@ public class CustomSearchOptions extends BaseExample {
     // set the page length
     queryMgr.setPageLength(10);
     // run the search
-    System.out.println("Performing search");
+    System.out.println("Performing search for 'penguin'");
     queryMgr.search(querydef, resultsHandle, 1);
     
     // display result document URIs

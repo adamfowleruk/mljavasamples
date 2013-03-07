@@ -7,7 +7,7 @@ import com.marklogic.client.DatabaseClientFactory.Authentication;
 public class BaseExample {
 
   // get server connection
-  static DatabaseClient client = DatabaseClientFactory.newClient("used.demo.marklogic.com", 8099, "rest-sample", "obvious", Authentication.DIGEST);
+  static DatabaseClient client = DatabaseClientFactory.newClient("used.demo.marklogic.com", 8060, "rest-sample", "obvious", Authentication.DIGEST);
   
 
 }
